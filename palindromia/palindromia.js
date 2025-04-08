@@ -4,6 +4,7 @@
 
 //qui creare una funzione, che dice solo se è palindroma
 function isWordPalindrome(word) {
+  word = word.toLowerCase();
   let reverseWord = "";
 
   //ciclo for
@@ -23,5 +24,8 @@ const userWord = prompt("Quale parola vuoi controllare?");
 // costante per la booleana
 const isUserWordPalindrome = isWordPalindrome(userWord);
 //step basici senza funzione
-if (isUserWordPalindrome) alert("Palindrome");
-else alert("Not palindrome");
+// if (isUserWordPalindrome) alert("Palindroma");
+// else alert("Non palindroma");
+
+//ternario??
+alert(isUserWordPalindrome ? "Palindroma" : "Not Palindroma");
